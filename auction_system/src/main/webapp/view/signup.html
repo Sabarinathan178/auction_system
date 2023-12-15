@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/src/main/webapp/EduWeb - Starter file/assets/css/login.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg,hsl(17, 75%, 41%),#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .contentBx .formBx{
+    width: 50%;
+}
+section .contentBx .formBx h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid hsl(170, 75%, 41%);
+    display: inline-block;
+    letter-spacing: 1;
+
+}
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1;
+}
+section .contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1;
+    color:#607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentBx .formBx .inputBx input[type="submit"]{
+    background: hsl(170, 75%, 41%);;
+    color:#fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background: hsl(170, 72%, 35%);;
+}
+section .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .contentBx .formBx .inputBx p{
+    color: #607d8b;
+}
+section .contentBx .formBx .inputBx p a{
+    color: hsl(170, 75%, 41%);;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color:#607d8b;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 13px;
+}
+.icons ion-icon:hover{
+    color: hsl(170, 75%, 41%);;
+}
+section .contentBx .formBx h3{
+    color: #607d8b;
+    /* text-align: center; */
+    margin: 40px 0 1px;
+    font-weight: 500;
+}
+    </style>
+<body>
+    <section>
+        <div class="imgBx">
+            <img src="/src/main/webapp/EduWeb - Starter file/assets/images/login.jpg">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Sign up</h2>
+                <form action="" method="POST">
+                    <div class="inputBx">
+                        <span>UserName:</span>
+                        <input type="text" name="Uname">
+                    </div>
+                    <div class="inputBx">
+                        <span>Email:</span>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password:</span>
+                        <input type="password" name="pwd">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name="remember">Remember Me</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Signup" name="signup"> 
+                    </div>
+                </form>
+                <h3>Login with social media</h3>
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    
+                    <!-- <a href="#"><ion-icon name="logo-instagram"></ion-icon></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
